@@ -13,7 +13,16 @@
   },
   "summary": "Experienced data analyst with over 4 years in ETL and data visualization, possessing a diverse range of analytical skills applicable to various roles in the data field. Having completed my Master's degree in Data Science, I am eager to leverage my knowledge and expertise in new career opportunities that drive business success through data analysis.",
   "skills": [
-    "AWS", "Git", "Python", "PySpark", "Qlik Sense", "R", "SQL", "Statistical model", "Tableau", "VBA"
+    {"name": "Python", "category": "programming"},
+    {"name": "PySpark", "category": "programming"},
+    {"name": "R", "category": "programming"},
+    {"name": "SQL", "category": "programming"},
+    {"name": "VBA", "category": "programming"},
+    {"name": "Qlik Sense", "category": "data-visualization"},
+    {"name": "Tableau", "category": "data-visualization"},
+    {"name": "AWS", "category": "cloud"},
+    {"name": "Git", "category": "cloud"},
+    {"name": "Statistical model", "category": "foundational"}
   ],
   "education": [
     {

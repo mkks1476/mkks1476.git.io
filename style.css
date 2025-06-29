@@ -120,11 +120,37 @@ section {
 }
 
 #skills .skills-list li {
-  background-color: #e9ecef;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  margin: 5px;
+  background-color: var(--primary-accent); /* Use primary accent color */
+  color: #fff; /* White text for contrast */
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  margin: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#skills .skills-list li:hover {
+  background-color: var(--secondary-accent); /* Darker on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill Category Colors (with increased specificity) */
+#skills .skills-list li.skill-programming {
+  background-color: rgba(176, 124, 140, 0.7); /* Lighter, semi-transparent muted rose */
+}
+
+#skills .skills-list li.skill-data-visualization {
+  background-color: rgba(106, 142, 174, 0.7); /* Lighter, semi-transparent muted blue */
+}
+
+#skills .skills-list li.skill-cloud {
+  background-color: rgba(212, 196, 163, 0.7); /* Lighter, semi-transparent warm beige */
+}
+
+#skills .skills-list li.skill-foundational {
+  background-color: rgba(169, 169, 169, 0.7); /* Lighter, semi-transparent medium grey */
 }
 
 #experience, #education, #certification, #contact {
@@ -233,18 +259,24 @@ footer {
 /* Name Animation Styles */
 @keyframes blur-in {
   0% {
+    -webkit-filter: blur(10px);
     filter: blur(10px);
     opacity: 0;
+    -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
   }
   50% {
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     opacity: 0.5;
+    -webkit-transform: translateY(5px);
     transform: translateY(5px);
   }
   100% {
+    -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
@@ -255,11 +287,14 @@ footer {
 
 .name-char {
   display: inline-block;
+  -webkit-filter: blur(10px);
   filter: blur(10px);
   opacity: 0;
+  -webkit-transform: translateY(-50px);
   transform: translateY(-50px);
 }
 
 .name-animated .name-char {
+  -webkit-animation: blur-in 0.8s forwards;
   animation: blur-in 0.8s forwards;
 }
