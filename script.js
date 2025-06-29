@@ -14,9 +14,12 @@ function buildPage(data) {
   const hero = document.getElementById('hero');
   hero.innerHTML = `
     <h1>${data.personalInfo.name}</h1>
-    <p>${data.personalInfo.title}</p>
-    <a href="mailto:${data.personalInfo.email}" class="cta-button">Get In Touch</a>
-    <a href="${data.personalInfo.cvUrl}" class="cta-button" download>Download CV</a>
+    <a href="mailto:${data.personalInfo.email}" class="cta-button primary-button">Get In Touch</a>
+    <a href="${data.personalInfo.cvUrl}" class="cta-button secondary-button" download>Download CV</a>
+    <div class="social-icons">
+      <a href="${data.personalInfo.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="${data.personalInfo.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   `;
 
   // About Section
@@ -74,12 +77,12 @@ function buildPage(data) {
     `).join('')}
   `;
 
-  // Contact Section
   const contact = document.getElementById('contact');
   contact.innerHTML = `
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:${data.personalInfo.email}">${data.personalInfo.email}</a></p>
-    <p>Phone: ${data.personalInfo.tel}</p>
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via email or connect with me on social media.</p>
+    <p><strong>Email:</strong> <a href="mailto:${data.personalInfo.email}">${data.personalInfo.email}</a></p>
+    <p><strong>Phone:</strong> ${data.personalInfo.tel}</p>
   `;
 }
 

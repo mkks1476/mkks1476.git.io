@@ -1,156 +1,154 @@
-/* General Body Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #F8F9FA;
-  color: #212529;
+/* --- CSS Variables for Theming --- */
+:root {
+  --bg-color: #F8F9FA; /* Light gray background */
+  --content-bg: #FFFBEB; /* Creamy content background */
+  --text-color: #212529; /* Dark text */
+  --primary-accent: #D9AAB7; /* Dusty rose for primary buttons */
+  --secondary-accent: #343A40; /* Dark gray for borders/secondary elements */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
 }
 
-/* Main Container */
-main {
-  max-width: 900px;
-  margin: 0 auto;
+/* --- General Body & Typography --- */
+body {
+  font-family: var(--body-font);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--secondary-accent);
+}
+
+h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+h2 { font-size: 2.2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--primary-accent); padding-bottom: 0.5rem; }
+h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+
+/* --- Layout --- */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
   padding: 2rem;
 }
 
-/* Section Styling */
+.main-column {
+  background-color: var(--content-bg);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.sidebar-column .card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
 section {
-  padding: 4rem 0;
-  border-bottom: 1px solid #e0e0e0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  padding: 2rem 0;
 }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Fallback for no-JS */
-.no-js section {
-    opacity: 1;
-    transform: none;
-}
-
-section:last-of-type {
-  border-bottom: none;
-}
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  color: #007BFF;
-  margin-bottom: 2rem;
-}
-
-/* Hero Section */
-#hero {
-  text-align: center;
-  padding: 6rem 0;
-}
-
-#hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-#hero p {
-  font-size: 1.5rem;
-  color: #6c757d;
-  margin-bottom: 2rem;
-}
-
+/* --- Component Styles --- */
 .cta-button {
   display: inline-block;
-  background-color: #007BFF;
-  color: #fff;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin: 0.5rem;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
 }
 
-.cta-button:hover {
-  background-color: #0056b3;
+.primary-button {
+  background-color: var(--primary-accent);
+  color: #fff;
+  border: 2px solid var(--primary-accent);
 }
 
-/* Skills List */
-.skills-list {
+.primary-button:hover {
+  background-color: #C799A5;
+  border-color: #C799A5;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: var(--secondary-accent);
+  border: 2px solid var(--secondary-accent);
+}
+
+.secondary-button:hover {
+  background-color: var(--secondary-accent);
+  color: #fff;
+}
+
+/* --- Section Specifics --- */
+#hero {
+  text-align: left;
+}
+
+.social-icons {
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  color: var(--secondary-accent);
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-accent);
+}
+
+#skills .skills-list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: -0.5rem; /* Counteract the margin on li elements */
 }
 
-.skills-list li {
+#skills .skills-list li {
   background-color: #e9ecef;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 20px;
-  font-weight: bold;
-  margin: 0.5rem; /* Replaces gap for Safari compatibility */
+  font-size: 0.9rem;
+  margin: 5px;
 }
 
-/* Experience & Education */
+#experience, #education, #certification, #contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+}
+
 .job, .education-item, .certification-item {
-  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary-accent);
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
 }
 
-.job h3, .education-item h3, .certification-item h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-bottom: 0.2rem;
-}
-
-.period {
-  color: #6c757d;
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.job ul {
-  padding-left: 20px;
-}
-
-/* Contact Section */
-#contact a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
+/* --- Footer --- */
 footer {
   text-align: center;
   padding: 2rem 0;
   color: #6c757d;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  main {
-    padding: 1rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-
-  #hero p {
-    font-size: 1.2rem;
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
   }
 }
