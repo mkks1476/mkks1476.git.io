@@ -5,7 +5,11 @@
     "title": "Data Analyst",
     "email": "kelvin_leung@live.hk",
     "tel": "9633 2152",
-    "cvUrl": "Leung Cheuk Lun_resume_2025_3_pdf.pdf"
+    "cvUrl": "Leung Cheuk Lun_resume_2025_3_pdf.pdf",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/cheuk-lun-leung-472a41183/",
+      "github": "https://github.com/mkks1476"
+    }
   },
   "summary": "Experienced data analyst with over 4 years in ETL and data visualization, possessing a diverse range of analytical skills applicable to various roles in the data field. Having completed my Master's degree in Data Science, I am eager to leverage my knowledge and expertise in new career opportunities that drive business success through data analysis.",
   "skills": [
