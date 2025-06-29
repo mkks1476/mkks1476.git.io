@@ -1,0 +1,91 @@
+
+{
+  "personalInfo": {
+    "name": "Leung Cheuk Lun, Kelvin",
+    "title": "Data Analyst",
+    "email": "kelvin_leung@live.hk",
+    "tel": "9633 2152",
+    "cvUrl": "Leung Cheuk Lun_resume_2025_3_pdf.pdf"
+  },
+  "summary": "Experienced data analyst with over 4 years in ETL and data visualization, possessing a diverse range of analytical skills applicable to various roles in the data field. Having completed my Master's degree in Data Science, I am eager to leverage my knowledge and expertise in new career opportunities that drive business success through data analysis.",
+  "skills": [
+    "AWS", "Git", "Python", "PySpark", "Qlik Sense", "R", "SQL", "Statistical model", "Tableau", "VBA"
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Data Science and Business Statistics",
+      "institution": "The Chinese University of Hong Kong",
+      "period": "Sep 2022 - July 2024"
+    },
+    {
+      "degree": "Bachelor of Science (Hons) Scheme in Applied Sciences (Health Studies)",
+      "institution": "The Hong Kong Polytechnic University",
+      "period": "Jun 2016 - Jun 2018"
+    }
+  ],
+  "certification": [
+    {
+      "name": "Tableau Desktop Specialist",
+      "issuer": "Tableau Software, LLC",
+      "date": "Oct 2021"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Associate, Big Data Analyst",
+      "company": "DBS Bank (Hong Kong) Ltd",
+      "period": "Aug 2024 - Present",
+      "responsibilities": []
+    },
+    {
+      "role": "Data Analyst",
+      "company": "DBS Bank (Hong Kong) Ltd",
+      "period": "Jan 2024 - Aug 2024",
+      "responsibilities": [
+        "Designed and implemented automated data validation and quality checks with PySpark and SQL, cutting data errors in financial reports by 50% and significantly enhancing reporting accuracy for management.",
+        "Built and launched over 4 Qlik Sense dashboards, enabling real-time access to key financial metrics and empowering business users to make faster, data-driven decisions.",
+        "Work closely with users to gather and analyze their requirements, ensuring data solutions are aligned with business goals and operational objectives."
+      ]
+    },
+    {
+      "role": "Business Analyst",
+      "company": "Bank of China (Hong Kong) Ltd",
+      "period": "Nov 2022 - Dec 2023",
+      "responsibilities": [
+        "Implement Cost Management Platform (CMP) system by performing UAT and collaborate with the development team to ensure the system fulfill end-user and stakeholder requirements.",
+        "Utilize SQL to extract data from the database and verify the accuracy of the financial management report.",
+        "Verify data mapping and conversion of customer budget's classification models to ensure compatibility with the new environment and expected outputs."
+      ]
+    },
+    {
+      "role": "Senior Project Executive",
+      "company": "Hong Kong Trade Development Council",
+      "period": "Sep 2021 - Nov 2022",
+      "responsibilities": [
+        "Gather different parties' requirements and develop interactive dashboards in Tableau to present customer usage rate at HKCEC.",
+        "Collaborate with team members to assist in the preparation of reports, documents, and meeting minutes.",
+        "Monitor constructional project at HKCEC to ensure the project is keep on track."
+      ]
+    },
+    {
+      "role": "Administrative Assistant",
+      "company": "The Hongkong Electric Company Limited",
+      "period": "Jul 2019 - Aug 2021",
+      "responsibilities": [
+        "Extract and transform customer service performance data from CRM and perform data visualization dashboard with tableau to advance customer's experience.",
+        "Implement rigorous data validation processes to maintain data integrity and enhance the quality of the sales report.",
+        "Assist in the preparation and coordination of presentations, reports, and other documents, ensuring accuracy, clarity, and visual appeal."
+      ]
+    },
+    {
+      "role": "Online Retail Executive",
+      "company": "Kaylie Business Solutions Co Ltd",
+      "period": "Aug 2018 - Jun 2019",
+      "responsibilities": [
+        "Review and plan all digital marketing initiatives and strategies to maximize sales on the online marketplace.",
+        "Analysis the latest technology and digital trends to identify potential business opportunities and possible products.",
+        "Collaborate closely with supply chain and sales teams on products and inventory management."
+      ]
+    }
+  ]
+}
