@@ -1,3 +1,5 @@
+document.documentElement.classList.remove('no-js');
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
     .then(response => response.json())

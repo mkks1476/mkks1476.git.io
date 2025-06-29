@@ -29,6 +29,12 @@ section.visible {
   transform: translateY(0);
 }
 
+/* Fallback for no-JS */
+.no-js section {
+    opacity: 1;
+    transform: none;
+}
+
 section:last-of-type {
   border-bottom: none;
 }
@@ -80,7 +86,7 @@ h2 {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  margin: -0.5rem; /* Counteract the margin on li elements */
 }
 
 .skills-list li {
@@ -88,6 +94,7 @@ h2 {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
+  margin: 0.5rem; /* Replaces gap for Safari compatibility */
 }
 
 /* Experience & Education */
