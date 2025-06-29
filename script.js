@@ -38,7 +38,7 @@ function buildPage(data) {
   const skills = document.getElementById('skills');
   skills.innerHTML = `
     <h2>Skills</h2>
-    <ul class="skills-list">${data.skills.map(skill => `<li>${skill}</li>`).join('')}</ul>
+    <ul class="skills-list">${data.skills.map(skill => `<li class="skill-${skill.category}">${skill.name}</li>`).join('')}</ul>
   `;
 
   // Experience Section
