@@ -150,5 +150,46 @@ footer {
 @media (max-width: 992px) {
   .content-wrapper {
     grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  #experience, #education, #certification, #contact {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Reduced font size for mobile */
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-column, .sidebar-column .card {
+    padding: 1.5rem;
+  }
+
+  #hero {
+    text-align: center; /* Centered hero content */
+  }
+
+  .cta-button {
+    display: block; /* Stack buttons */
+    width: 80%;
+    margin: 1rem auto; /* Center buttons with vertical space */
+  }
+
+  .social-icons {
+    margin-top: 1.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+  }
+
+  #experience, #education, #certification, #contact {
+    padding: 2rem 1rem;
   }
 }
