@@ -39,14 +39,16 @@
       "role": "Associate, Big Data Analyst",
       "company": "DBS Bank (Hong Kong) Ltd",
       "period": "Aug 2024 - Present",
-      "responsibilities": []
+      "responsibilities": [
+        "Designed and implemented automated data validation and quality checks with PySpark and SQL, cutting data errors in financial reports by 50% and significantly enhancing reporting accuracy for management."
+      ]
     },
     {
       "role": "Data Analyst",
       "company": "DBS Bank (Hong Kong) Ltd",
       "period": "Jan 2024 - Aug 2024",
       "responsibilities": [
-        "Designed and implemented automated data validation and quality checks with PySpark and SQL, cutting data errors in financial reports by 50% and significantly enhancing reporting accuracy for management.",
+        
         "Built and launched over 4 Qlik Sense dashboards, enabling real-time access to key financial metrics and empowering business users to make faster, data-driven decisions.",
         "Work closely with users to gather and analyze their requirements, ensuring data solutions are aligned with business goals and operational objectives."
       ]
