@@ -54,7 +54,7 @@ h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
 }
 
 section {
-  padding: 2rem 0;
+  padding: 1rem 0; /* Reduced padding between sections */
 }
 
 /* --- Component Styles --- */
@@ -93,10 +93,12 @@ section {
 /* --- Section Specifics --- */
 #hero {
   text-align: left;
+  padding-top: 1rem; /* Reduced top padding */
+  padding-bottom: 1rem; /* Reduced bottom padding */
 }
 
 .social-icons {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .social-icons a {
@@ -128,7 +130,7 @@ section {
 #experience, #education, #certification, #contact {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem; /* Reduced padding */
 }
 
 .job, .education-item, .certification-item {
@@ -153,7 +155,7 @@ footer {
     padding: 1rem;
   }
   #experience, #education, #certification, #contact {
-    padding: 2rem;
+    padding: 1rem; /* Reduced padding */
   }
 }
 
@@ -190,6 +192,74 @@ footer {
   }
 
   #experience, #education, #certification, #contact {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem; /* Reduced padding */
   }
+}
+
+/* Styles for the 'Other Experience' toggle */
+.other-experience-toggle {
+  background-color: var(--content-bg);
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.other-experience-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.other-experience-toggle h3 {
+  margin: 0;
+  color: var(--secondary-accent);
+}
+
+.other-experience-toggle i {
+  margin-left: 0.5rem;
+}
+
+/* Styles for clickable job headers within experience sections */
+.job-header-clickable {
+  cursor: pointer;
+}
+
+.job-header-clickable:hover {
+  text-decoration: underline;
+}
+
+/* Name Animation Styles */
+@keyframes blur-in {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    filter: blur(5px);
+    opacity: 0.5;
+    transform: translateY(5px);
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#hero-name {
+  display: inline-block; /* To allow spans to be inline-block */
+}
+
+.name-char {
+  display: inline-block;
+  filter: blur(10px);
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.name-animated .name-char {
+  animation: blur-in 0.8s forwards;
 }
