@@ -220,6 +220,10 @@ section.visible {
     font-size: 1.1rem;
 }
 
+#about p strong {
+    color: var(--primary-color);
+}
+
 #skills .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
