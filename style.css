@@ -529,7 +529,6 @@ footer p {
 }
 
 .mobile-nav-menu {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -537,6 +536,10 @@ footer p {
     background-color: var(--card-background);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     border-top: 1px solid var(--border-color);
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .mobile-nav-links {
@@ -571,7 +574,7 @@ footer p {
     }
 
     .mobile-nav-menu.open {
-        display: block;
+        max-height: 500px; /* Adjust as needed */
     }
 
     .hero-text h1 {
