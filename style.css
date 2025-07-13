@@ -518,7 +518,9 @@ footer p {
     transform-origin: bottom left;
 }
 
-/* Hamburger Menu */
+.hamburger-menu i {
+    transition: transform 0.3s ease;
+}
 .hamburger-menu {
     display: none;
     background: none;
