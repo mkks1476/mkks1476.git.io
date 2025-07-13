@@ -143,19 +143,16 @@ function setupMobileMenu() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const mobileMenu = document.querySelector('.mobile-nav-menu');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
-    const icon = hamburgerMenu.querySelector('i');
 
     hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('open');
         mobileMenu.classList.toggle('open');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-times');
     });
 
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', () => {
+            hamburgerMenu.classList.remove('open');
             mobileMenu.classList.remove('open');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
         });
     });
 }
