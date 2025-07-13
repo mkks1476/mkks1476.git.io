@@ -27,7 +27,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 .container {
@@ -127,11 +127,12 @@ section.visible {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     color: var(--secondary-color);
     line-height: 1.2;
     margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
 }
 
 .hero-text h1 span {
