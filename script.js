@@ -156,3 +156,11 @@ function setupMobileMenu() {
         });
     });
 }
+
+function setDynamicFooter() {
+    const footerText = document.getElementById('footer-text');
+    const currentYear = new Date().getFullYear();
+    footerText.innerHTML = `&copy; ${currentYear} Leung Cheuk Lun, Kelvin. All Rights Reserved.`;
+}
+
+setDynamicFooter();
