@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setupScrollAnimations();
             setupActiveNavLinks();
             setupExperienceToggle(); // Initialize the collapsible experience section
+            setupMobileMenu(); // Initialize the mobile menu
         })
         .catch(error => {
             console.error("Error fetching data: ", error);
@@ -134,6 +135,22 @@ function setupExperienceToggle() {
         item.addEventListener('click', (event) => {
             if (event.target.tagName === 'A') return;
             item.classList.toggle('open');
+        });
+    });
+}
+
+function setupMobileMenu() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-nav-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+    hamburgerMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
+
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
         });
     });
 }
