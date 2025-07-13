@@ -585,7 +585,7 @@ footer p {
     background-color: var(--background-color);
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
