@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #3B82F6;
-    --secondary-color: #1F2937;
-    --background-color: #F9FAFB;
+    --primary-color: #0D9488;
+    --secondary-color: #111827;
+    --background-color: #F3F4F6;
     --card-background: #FFFFFF;
-    --text-color: #374151;
+    --text-color: #111827;
     --subtle-text-color: #6B7280;
     --border-color: #E5E7EB;
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -23,11 +23,11 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Jersey 10", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .container {
@@ -218,6 +218,9 @@ section.visible {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #about p strong {
@@ -248,23 +251,23 @@ section.visible {
 }
 
 .skill-item.skill-programming {
+    background-color: rgba(13, 148, 136, 0.1);
+    border-left: 4px solid #0D9488;
+}
+
+.skill-item.skill-data-visualization {
     background-color: rgba(59, 130, 246, 0.1);
     border-left: 4px solid #3B82F6;
 }
 
-.skill-item.skill-data-visualization {
-    background-color: rgba(16, 185, 129, 0.1);
-    border-left: 4px solid #10B981;
-}
-
 .skill-item.skill-cloud {
-    background-color: rgba(239, 68, 68, 0.1);
-    border-left: 4px solid #EF4444;
+    background-color: rgba(107, 114, 128, 0.1);
+    border-left: 4px solid #6B7280;
 }
 
 .skill-item.skill-foundational {
-    background-color: rgba(249, 115, 22, 0.1);
-    border-left: 4px solid #F97316;
+    background-color: rgba(17, 24, 39, 0.1);
+    border-left: 4px solid #111827;
 }
 
 #experience .timeline {
